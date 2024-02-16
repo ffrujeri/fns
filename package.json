@@ -1,0 +1,25 @@
+{
+  "name": "@fnoids/test",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "esbuild hello_world.ts --bundle --platform=node --target=node20 --format=esm --charset=utf8 --outfile=./dist/hello_world.mjs --banner:js=\"import { createRequire } from 'module';const require = createRequire(import.meta.url);\""
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.476.0",
+    "@aws-sdk/lib-storage": "^3.476.0",
+    "@octokit/auth-app": "^6.0.3",
+    "@octokit/core": "^5.0.2",
+    "@octokit/webhooks": "^12.0.10",
+    "@supabase/postgrest-js": "^1.9.0",
+    "octokit": "^3.1.2"
+  },
+  "devDependencies": {
+    "@octokit/webhooks-types": "^7.3.1",
+    "@types/node": "^20.10.5",
+    "esbuild": "^0.19.10",
+    "typescript": "^5.3.3"
+  }
+}

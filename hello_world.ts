@@ -20,5 +20,6 @@ type FnoidsRequestAllowedTrigger<T> = (
 
 export async function processRequest(event: FnoidsRequest<unknown>) {
   console.log("Hello, world!");
+  console.log("Hey Tiff");
   return event.body;
 }
